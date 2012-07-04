@@ -1886,14 +1886,13 @@ static void __init am335x_evm_init(void)
 	am335x_evm_i2c_init();
 	omap_sdrc_init(NULL, NULL);
 	usb_musb_init(&musb_board_data);
-	omap_board_config = am335x_evm_config;
-	omap_board_config_size = ARRAY_SIZE(am335x_evm_config);
 	/* Create an alias for icss clock */
 	if (clk_add_alias("pruss", NULL, "pruss_uart_gclk", NULL))
 		pr_warn("failed to create an alias: icss_uart_gclk --> pruss\n");
 	/* Create an alias for gfx/sgx clock */
 	if (clk_add_alias("sgx_ck", NULL, "gfx_fclk", NULL))
 		pr_warn("failed to create an alias: gfx_fclk --> sgx_ck\n");
+	setup_calixto_board();
 }
 
 static void __init am335x_evm_map_io(void)
