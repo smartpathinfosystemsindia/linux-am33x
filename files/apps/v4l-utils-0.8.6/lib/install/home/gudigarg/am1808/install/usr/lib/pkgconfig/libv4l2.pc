@@ -1,0 +1,10 @@
+prefix=/home/gudigarg/am1808/v4l-utils-0.8.6/../install/usr
+libdir=/home/gudigarg/am1808/v4l-utils-0.8.6/../install/usr/lib
+
+Name: libv4l2
+Description: v4l2 device access library
+Version: 0.8.6
+Requires.private: libv4lconvert
+Libs: -L${libdir} -lv4l2
+Libs.private: -lpthread
+Cflags: -I${prefix}/include

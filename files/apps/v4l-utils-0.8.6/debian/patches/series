@@ -1,0 +1,3 @@
+allow-disabling-libjpeg.diff
+separate_libsubdir_for_v4lconvert.diff
+kfreebsd.diff

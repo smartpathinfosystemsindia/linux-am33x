@@ -1,0 +1,7 @@
+export PATH=$PATH:/opt/arm-none-linux-gnueabi/bin
+export CFLAGS=-I$PWD/../install/usr/include
+export LIBS=-I$PWD/../install/usr/lib -ljpeg
+export CC=arm-none-linux-gnueabi-gcc
+export TOPDIR=$PWD
+export KERNEL_DIR=$TOPDOIR/../kernel/linux-03.21.00.04
+make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi-

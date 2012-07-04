@@ -1,0 +1,9 @@
+prefix=/home/gudigarg/am1808/v4l-utils-0.8.6/../install/usr
+libdir=/home/gudigarg/am1808/v4l-utils-0.8.6/../install/usr/lib
+
+Name: libv4lconvert
+Description: v4l format conversion library
+Version: 0.8.6
+Libs: -L${libdir} -lv4lconvert
+Libs.private: -L/home/gudigarg/am1808/v4l-utils-0.8.6/../install/usr/lib -lrt -lm -ljpeg
+Cflags: -I${prefix}/include
